@@ -47,6 +47,8 @@ Results
 oh these results are really wrong jesus what happened.
 I found out what happened. The images gathered from keras and subsequently stored were stored as integers. This really messed up calculating the distances.
 Add these two lines to cast the images to floats.
+`x_train.astype(float)
+  x_test.astype(float)`
 I now have to run this again for 18 hours. Oh boy.
 
 ```
@@ -90,4 +92,4 @@ Confusion Matrix
 
 
 Conclucsion:
-Machine learning is a little less intimidating to me. Andrew Ng is my hero. I need a new laptop. 
+Machine learning is a little less intimidating to me. Andrew Ng is my hero. I need a new laptop.
