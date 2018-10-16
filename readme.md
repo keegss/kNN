@@ -1,7 +1,3 @@
-Is machine learning scary/intimidiating ?
-
-Lets implement, according to the internet, the simplest machine learning algorithm, k-Nearest Neighbors.
-
 <h4>problem description</h4>
 The k-Nearest Neighbors algorithm (kNN) is a machine learning algorithm used for both classification and regression. The algorithm works by calculating the distances of a given test item to the rest of the dataset and uses a majority vote to classify the test item. The goal of this project is to run the kNN algorithm on the MNIST dataset of handwritten numbers, and determine its accuracy.
 <br>
