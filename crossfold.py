@@ -291,6 +291,12 @@ def cross_validation(x_train, y_train, x_test, y_test):
 
 def main():
     x_train, y_train, x_test, y_test = load_data()
+
+    x_train.astype(float)
+    x_test.astype(float)
+    y_train.astype(float)
+    y_test.astype(float)
+
     cross_validation(x_train, y_train, x_test, y_test)
 
 if __name__ == "__main__":

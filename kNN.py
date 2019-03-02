@@ -33,7 +33,7 @@ def getDistancesArray(trainingSet, imgTest, y_train):
 def generateAllDistances(x_train, y_train, x_test, y_test):
 
     distances = []
-    for i in range(0, 100): #len(x_test)):
+    for i in range(0, len(x_test)):
         distances.append((y_test[i], getDistancesArray(x_train, x_test[i], y_train)))
 
     with open("test.txt", "wb") as fp:
@@ -92,6 +92,8 @@ def main():
 
     x_train.astype(float)
     x_test.astype(float)
+    y_train.astype(float)
+    y_test.astype(float)
 
     correct_predictions, confusion_matrix = kNN(x_train, y_train, x_test, y_test)
 
